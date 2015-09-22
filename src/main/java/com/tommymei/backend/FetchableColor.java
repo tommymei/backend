@@ -6,7 +6,9 @@ import java.time.Instant;
 import java.util.UUID;
 
 /**
- * Random generated color than can be fetchable by the client
+ * Random generated color than can be fetchable by the client.
+ * 
+ * Identity is base on the id attribute.
  * 
  * @author tommymei
  *

@@ -1,1 +1,5 @@
 # backend
+
+```
+> mvn clean package
+```
