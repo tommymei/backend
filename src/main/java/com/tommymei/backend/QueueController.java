@@ -41,7 +41,12 @@ public class QueueController {
         checkArgument(isNotBlank(id), "id is blank");
 
         UUID uuid = UUID.fromString(id);
-        this.colorQueue.set(uuid);
+        try {
+            this.colorQueue.set(uuid);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "{\"response\": \"failed\"}";
+        }
         return "{\"response\": \"success\"}";
     }
 
